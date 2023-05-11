@@ -16,10 +16,12 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Route path="/" exact component={Home} />
-        <Route path="/movie/:imdbID" component={MovieDetail} />
-        <Route path="/" component={PageNotFound} />
-        <Footer />
+        <div className="container">
+          <Route path="/" exact component={Home} />
+          <Route path="/movie/:imdbID" component={MovieDetail} />
+          <Route path="/" component={PageNotFound} />
+          <Footer />
+        </div>
       </Router>
     </div>
   );
